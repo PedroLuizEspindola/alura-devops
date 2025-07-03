@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    # O comando abaixo sobrescreve o CMD do Dockerfile.
+    # A flag --reload é ótima para desenvolvimento, pois reinicia o servidor a cada alteração no código.
+    # Para produção, remova a flag --reload.
+    command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload

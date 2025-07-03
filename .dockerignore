@@ -1,0 +1,23 @@
+# Arquivos do Git
+.git
+.gitignore
+
+# Arquivos do Docker
+Dockerfile
+docker-compose.yml
+
+# Artefatos e cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv
+venv
+
+# Banco de dados local de desenvolvimento
+escola.db
+
+# Arquivos de IDE
+.vscode/
+.idea/
+
